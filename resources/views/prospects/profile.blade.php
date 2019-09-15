@@ -191,7 +191,7 @@
                                     {!! Form::model( $prospect, ['method' => 'PUT', 'class' => 'form-horizontal form-bordered'  , 'action' =>['ProspectController@admission', $prospect->slug]])!!} 
 
                                     <div style="display:none">
-                                      {!! Form::hidden('student', '2') !!}
+                                      {!! Form::hidden('student_id', '2') !!}
                                    </div>
                                    <div style="display:none">
                                       {!! Form::hidden('progress', '100') !!}

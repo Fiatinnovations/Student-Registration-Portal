@@ -12,10 +12,12 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function only_logged_in_user_can_see_prospects_list()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $response = $this->get('/')->assert(200);
+    
     }
+
+
 }
+  

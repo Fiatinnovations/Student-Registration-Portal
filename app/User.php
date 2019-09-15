@@ -45,5 +45,9 @@ class User extends Authenticatable
         return $this->roles == 2;
 
     }
+
+    public function student(){
+        return $this->belongsTo('App\Student');
+    }
     
 }
